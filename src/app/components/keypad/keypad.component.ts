@@ -14,8 +14,12 @@ export class KeypadComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  public onPress(value: string): void{
+  public onPress(value: string): void {
     this.calculatorService.input(value);
+  }
+
+  public onOperator(operator: number): void {
+    this.calculatorService.operator(operator);
   }
 
 }
