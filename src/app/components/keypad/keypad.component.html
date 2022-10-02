@@ -7,17 +7,17 @@
         </button>
       </div>
       <div class="example-button-container">
-        <button mat-fab color="primary" aria-label="Plus/ Minus Button">
+        <button mat-fab color="primary" aria-label="Plus/ Minus Button" (click)="onOperator(7)">
           +/-
         </button>
       </div>
       <div class="example-button-container">
-        <button mat-fab color="primary" aria-label="Percent Button">
+        <button mat-fab color="primary" aria-label="Percent Button" (click)="onOperator(6)">
           %
         </button>
       </div>
       <div class="example-button-container">
-        <button mat-fab color="warn" aria-label="Divison Button">
+        <button mat-fab color="warn" aria-label="Divison Button" (click)="onOperator(5)">
          /
         </button>
       </div>
@@ -39,7 +39,7 @@
           </button>
         </div>
         <div class="example-button-container">
-          <button mat-fab color="warn" aria-label="Multiplication Button">
+          <button mat-fab color="warn" aria-label="Multiplication Button" (click)="onOperator(4)">
            X
           </button>
         </div>
@@ -61,8 +61,30 @@
           </button>
         </div>
         <div class="example-button-container">
-          <button mat-fab color="warn" aria-label="Subtraction Button">
+          <button mat-fab color="warn" aria-label="Subtraction Button" (click)="onOperator(3)">
            -
+          </button>
+        </div>
+      </div>
+      <div class="example-flex-container">
+        <div class="example-button-container">
+          <button mat-fab color="primary" aria-label="1 Button" (click)="onPress('1')">
+            1
+          </button>
+        </div>
+        <div class="example-button-container">
+          <button mat-fab color="primary" aria-label="2 Button" (click)="onPress('2')">
+            2
+          </button>
+        </div>
+        <div class="example-button-container">
+          <button mat-fab color="primary" aria-label="3 Button" (click)="onPress('3')">
+            3
+          </button>
+        </div>
+        <div class="example-button-container">
+          <button mat-fab color="warn" aria-label="Addition Button" (click)="onOperator(2)">
+           +
           </button>
         </div>
       </div>
@@ -83,7 +105,7 @@
           </button>
         </div>
         <div class="example-button-container">
-          <button mat-fab color="warn" aria-label="Equal Button">
+          <button mat-fab color="warn" aria-label="Equal Button" (click)="onOperator(8)">
            =
           </button>
         </div>
