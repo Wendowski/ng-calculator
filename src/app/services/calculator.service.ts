@@ -43,7 +43,17 @@ export class CalculatorService {
       this.y = 0;
     }
 
-    if (operator < 8 && operator != 1) {
+    if (operator ==  7){
+      const negative: string = '' + (+this.display.getValue() * -1);
+      this.display.next(negative);
+    }
+
+    if (operator ==  6){
+      const percentage: string = '' + (+this.display.getValue() / 100);
+      this.display.next(percentage);
+    }
+
+    if (operator < 6 && operator != 1) {
       this.selected_operator = operator;
       this.x = +this.display.getValue();
     }
